@@ -1,7 +1,7 @@
 # Hacking-stuff
+Here is a collection of file I have put together for when my vm dies 
 
----
-#### Added script to install Xgecu using wine in ubuntu
+## Added script to install Xgecu using wine in ubuntu
 
 Massive thanks to the repos for making the needed files accesible
 - https://github.com/Kreeblah/XGecu_Software
