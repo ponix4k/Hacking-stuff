@@ -3,7 +3,7 @@ Here is a collection of file I have put together for when my vm dies
 
 ## Added script to install Xgecu using wine in ubuntu
 
-Massive thanks to the repos for making the needed files accesible
+Massive thanks to the repos for making the needed files accessible
 - https://github.com/Kreeblah/XGecu_Software
 - https://github.com/radiomanV/TL866
 
