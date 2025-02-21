@@ -1,6 +1,6 @@
 # Hacking-stuff
 
-
+---
 #### Added script to install Xgecu using wine in ubuntu
 
 Massive thanks to the repos for making the needed files accesible
