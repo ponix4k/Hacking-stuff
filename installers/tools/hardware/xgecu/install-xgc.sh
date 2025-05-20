@@ -17,9 +17,10 @@ echo "Ensuring home folder has correct permissions..."
 sudo chmod 755 ~
 
 # Remove and reinstall Wine if needed
-echo "\n************************************"
+echo "************************************"
 echo "Do you want to reinstall Wine? (y/n)"
-echo "************************************\n"
+echo "************************************"
+
 read reinstall
 if [[ "$reinstall" == "y" ]]; then
     echo "Reinstalling Wine..."
@@ -27,9 +28,9 @@ if [[ "$reinstall" == "y" ]]; then
     sudo apt install -y wine64 wine32
 fi
 
-echo "\n******************************************************"
-echo "\n** Make sure you add z as a drive at the location / **"
-echo "\n******************************************************"
+echo "******************************************************"
+echo "** Make sure you add z as a drive at the location / **"
+echo "******************************************************"
 
 winecfg
 
@@ -44,11 +45,11 @@ wget -O xgpro_setup.rar "https://github.com/Kreeblah/XGecu_Software/raw/refs/hea
 
 # Install unrar if not installed
 echo "Installing unrar..."
-sudo apt install -y unrar
+sudo apt install -y unrar-free
 
 # Extract the installer
 echo "Extracting Xgpro Installer..."
-unp xgpro_setup.rar "$XGPRO_DIR/"
+unrar-free xgpro_setup.rar "$XGPRO_DIR/"
 
 # Find and run the setup.exe
 echo "Running Xgpro setup..."
@@ -98,3 +99,7 @@ else
     exit 1
 fi
 
+echo "************************************"
+echo "    The xgeku tool is located at:   "
+echo $XGPRO_DIR
+echo "************************************"
