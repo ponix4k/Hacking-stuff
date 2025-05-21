@@ -41,15 +41,17 @@ cd "$XGPRO_DIR"
 
 # Download Xgecu Software Installer
 echo "Downloading Xgpro Installer..."
+
 wget -O xgpro_setup.rar "https://github.com/Kreeblah/XGecu_Software/raw/refs/heads/master/Xgpro/12/xgproV1278_Setup.rar"
+# https://github.com/Kreeblah/XGecu_Software/raw/refs/heads/master/Xgpro/12/xgproV1288_setup.rar
 
 # Install unrar if not installed
 echo "Installing unrar..."
-sudo apt install -y unrar-free
+sudo apt install -y unrar
 
 # Extract the installer
 echo "Extracting Xgpro Installer..."
-unrar-free xgpro_setup.rar "$XGPRO_DIR/"
+unrar x xgpro_setup.rar "$XGPRO_DIR/"
 
 # Find and run the setup.exe
 echo "Running Xgpro setup..."
